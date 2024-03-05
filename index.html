@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div id="form-container">
+        <h2>login</h2>
+        <form action="" onsubmit=" return validateform()">
+           <input type="text" placeholder="username" name="username" id="username" required="required "><br>
+           <p id="usererror" class="error"></p>
+           <input type="password" name="password" placeholder="password" id="password"><br>
+           <p id="passerror" class="error"></p>
+           <input type="submit"><br>
+           <button type="button" id="newuser" onclick="redirectToSignup()"><b>Signup</b></button>
+        </form>
+    </div>
+    <script>
+        function redirectToSignup() {
+            window.location.href = "signup.html";
+        }
+    </script>
+</body>
+</html>

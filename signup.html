@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="signup.js"></script> <!-- Create a new JavaScript file for signup.js -->
+</head>
+<body>
+    <div id="form-container">
+        <h2>Sign Up</h2>
+        <form action="" onsubmit="return validateSignup()">
+            <input type="email" placeholder="Email" name="email" id="email" required><br>
+            <p id="emailError" class="error"></p>
+
+            <input type="password" placeholder="Password" name="password" id="password" required><br>
+            <p id="passwordError" class="error"></p>
+
+            <input type="text" placeholder="First Name" name="firstName" id="firstName" required><br>
+            <p id="firstNameError" class="error"></p>
+
+            <input type="text" placeholder="Last Name" name="lastName" id="lastName" required><br>
+            <p id="lastNameError" class="error"></p>
+
+            <input type="tel" placeholder="Phone Number" name="phoneNumber" id="phoneNumber" required><br>
+            <p id="phoneNumberError" class="error"></p>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
